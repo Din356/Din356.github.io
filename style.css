@@ -1,44 +1,310 @@
-body{
-    font-size:19px;
-    line-height:20px;
-    font-family: "bely-display", serif;
-    font-weight:400;
-    font-style: normal;
-    color:black;
-    background-color:grey;
-    margin:30px;
-    padding:0;
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-image: url(assets/paper.png);
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
 
+.welcome.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* video settings */
+
+img{
+    width:100%;
+}
+
+
+img, video {
+    width: 100%;
+    display: block;
+}
+
+
+div.herovideo {
+    width:400px;
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+}
+
+
+/* image size settings */
+
+div.bigimage{
+    transform: scale(1.35);
+}
+
+div.biggerimage{
+    transform:scale(2);
+}
+
+div.smallimage{
+    transform:scale(0.25);
+}
+
+div.smallerimage{
+    transform:scale(0.7)
+}
+
+div.smallerimage2{
+    transform:scale(0.8)
+}
+
+div.rotateimage{
+    transform:scaleX(-1);
+    transform:scale(2);
+}
+
+div.flipimage{
+    transform:scaleX(-1);
+}
+
+div.rotateimage{
+    transform:scaleY(-1)
+}
+
+.crop-container {
+  width: 200px; /* Desired cropped width */
+  height: 1000px; /* Desired cropped height */
+  overflow: hidden;
+  position: relative;
+}
+
+.crop-container img {
+  position: absolute;
+  top: -50px;  /* Adjust to crop from top */
+  left: -30px; /* Adjust to crop from left */
+}
+
+/* main website text settings */
+
+body{
+    font-size:29px;
+    line-height:34px;
+    font-family: "bely","serif";
+    font-weight:100;
+    font-style: normal;
+    background-color:#e1e1e1;
+    padding:0;
+    text-align: justify;
+    margin:50px auto;
+}
+
+div.border{
+    padding:20px 30px;
+    border-radius: 5px; 
+    background-color:rgb(245, 238, 238);
+    border: 2px solid rgb(160, 153, 153);
+     transition: 0.5s ease-in-out;   
 }
 
 div.title{
-    font-size:57px;
+    font-size:25px;
     font-family: "bely-display", serif;
     font-weight:700;
-    font-style:italic;
+    font-style:regular;
     line-height:50px;
-    width:70%;
-    margin-left:auto;
+    width:33%;
+    margin-right:auto;
+    margin-top:10px;
 }
 
+div.header{
+    font-size:70px;
+    line-height:75px;
+    font-family: "bely","serif";
+    font-weight:700;
+    font-style:normal;
+    color:black;
+    padding:0px; 
+}
+
+div.header2{
+    font-size:25px;
+    line-height:30px;
+    font-family: "bely","serif";
+    font-weight:700;
+    font-style:normal;
+    color:black;
+    padding:0px;    
+}
+
+div.largesttext{
+    font-size:100px;
+    line-height:110px;
+}
+
+div.subtitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.quote{
+    font-size:30px;
+    line-height:40px;
+    font-family: "bely","serif";
+    font-weight:100;
+    font-style:italic;
+    color:black;
+    padding:0px; 
+}
+
+div.quote1{
+    font-size:30px;
+    line-height:40px;
+    font-family: "bely","serif";
+    font-weight:100;
+    font-style:italic;
+    color:black;
+    padding:0px; 
+}
+
+div.quote2{
+    color:#c0bd13;
+    font-style:italic;
+    background-color: white;
+}
+
+    div.curved-border {
+      padding: 20px 15px;
+      border: 2px solid black; /* blue border */
+      border-radius: 10px;       /* curved corners */
+      color: black;
+    }
+
+/* text size settings */
+
+div.smalltext{
+    font-size:10px;
+}
+
+div.largetext{
+    font-size:30px;
+    line-height:40px;
+}
+
+div.largesttext{
+    font-size:129px;
+    line-height:110px;
+}
+
+div.quotetext{
+    font-size:19px;
+    line-height:25px;
+    text-align: left;
+}
+
+/* text alignment settings */
+
+div.justifed-text{
+    text-align:justify;
+}
+
+
+div.textcenter{
+    text-align:center;
+}
+
+div.textleft{
+    text-align:left;
+}
+
+div.textcenter{
+    text-align:center;
+}
+
+/* margin and padding settings */
+
 div.pad{
+    padding:100px;
+}
+
+div.pad2{
     padding:20px;
 }
 
+div.headermargin{
+    margin:100px;
+}
+
+div.headermargin2{
+    margin:25px;
+}
+
 div.mt{
+    margin-top:120px;
+}
+
+div.mtsmall{
     margin-top:100px;
 }
 
+div.mtcontainer{
+    margin-top:300px;
+}
+
+div.mtcontainer2{
+    margin-top:150px;
+}
+
+div.mtsmallest{
+    margin-top:50px;
+}
+
 div.mb{
-    margin-bottom:100px;
+    margin-bottom:200px;
+}
+
+div.mbsmall{
+    margin-bottom:50px;
+}
+
+div.mbsmall2{
+    margin-bottom:25px;
+}
+
+div.mbcontainer{
+    margin-bottom:400px;
+}
+
+div.mbcontainer2{
+    margin-bottom:200px;
 }
 
 div.ml{
+    margin-left:250px;
+}
+
+div.mlsmall{
     margin-left:100px;
 }
 
+div.mrsmall{
+    margin-right:50px;
+}
+
 div.mr{
-    margin-right:100px;
+    margin-right:250px;
+}
+
+
+div.mrauto{
+    margin-right:auto;
+}
+
+div.mlauto{
+    margin-left:auto;
 }
 
 div.mcenter{
@@ -46,12 +312,18 @@ div.mcenter{
     margin-right:auto;
 }
 
+/* text colour settings */
+
 div.quote{
     font-size: 32px;
     line-height:36px;
 }
 
 div.font-black{
+    color:rgb(11, 11, 11);
+}
+
+div.font-black1{
     color:black;
 }
 
@@ -59,41 +331,249 @@ div.font-white{
     color:white;
 }
 
+/* text colour trigger animation settings */
+
+div.font-grey{
+   color:#e1e1e1;
+    transition: color 1s ease-in-out;   
+}
+
+div.font-grey1{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey2{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey3{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey4{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey5{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey6{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey7{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey8{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey9{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey10{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey11{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.font-grey12{
+   color:#e1e1e1;
+   transition: color 1s ease-in-out;  
+}
+
+div.highlight {
+    background-color: red; /* or use color instead */
+    color: black;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+/* text colors settings (2) */
+
 div.font-red{
+    color:rgb(173, 37, 37);
+}
+
+div.font-red2{
     color:red;
 }
 
 div.font-yellow{
-    color:yellow;
+    color:#c0bd13;
 }
 
-div.bg-grey{
-    background-color:grey;
-}
+/* background color settings */
 
 div.bg-white{
     background-color:white;
 }
 
-div.cover{
-    width:1000px;
-    height:400px;
-    background-color:orange;
-    padding:20px;
-    margin-left:auto;
+div.bg-black{
+    background-color: black;
 }
 
-div.box{
-    background-color:red;
-    font-size:60px;
-    width:80%;
-    margin-top:300px;
+/* text width setting variations */
+
+div.width25{
+    width:25%;
 }
 
-div.paragraph{
-    margin-top:20px;
-    font-size:20px;
+div.width50{
+    width:50%;
+}
+
+
+div.width75{
     width:75%;
-    margin-left:auto;
-    margin-bottom:200px;
 }
+
+div.width33{
+    width:33%;
+}
+
+div.width66{
+    width:66%;
+}
+
+div.width100{
+    width:100%;
+}
+
+div.width150{
+    width:150%;
+}
+
+div.width15{
+    width:15%;
+}
+
+div.width20{
+    width:20%;
+}
+
+div.width10{
+    width:10%;
+}
+
+div.width70{
+    width:70%;
+}
+
+/* container settings */
+
+div.container{
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+    border:1px black;
+}
+
+div.containerimage{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* text/image warp settings (container) */
+
+div.textwarp{
+    position:absolute;
+    top:45%;
+    bottom:60%;
+    left:25%;
+}
+
+div.parawarp{
+    position:absolute;
+    top:-5%;
+    bottom:95%;
+    right:800px;
+}
+
+div.parawarp2{
+    position:absolute;
+    top:11%;
+    left:760px;
+}
+
+div.parawarp4{
+    position:absolute;
+    top:45%;
+    left:220px;
+}
+
+div.parawarp6{
+    position:absolute;
+    bottom:35%;
+    left:25%;
+}
+
+div.imgwarp{
+    position:absolute;
+    top:40%;
+    bottom:60%;
+    left:25%;
+}
+
+div.quotewarp{
+    position:absolute;
+    top:52%;
+    bottom:30%;
+    left:275px;
+}
+
+/* flex settings */
+
+div.flexend{
+    justify-content: flex-end;
+}
+
+
+div.flexcenter{
+    justify-content: center;
+}
+
+
+div.flexbetween{
+    justify-content: space-between;
+}
+
+
+div.alignstart{
+    align-items: flex-start;
+}
+
+
+div.alignend{
+    align-items: flex-end;
+}
+
+/* hero video */
+
+div.herovideo {
+    width:300px;
+    position: fixed;
+    z-index: 9;
+    bottom:20px;
+    right: 20px;
+}
+
+
+

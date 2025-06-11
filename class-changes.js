@@ -1,0 +1,56 @@
+const classChanges = [
+  /* text paragraph border animation effects */
+
+  { time: 1, target: ".p1", add: "border" },
+  { time: 35, target: ".p1", remove: "border" },
+  { time: 37, target: ".p2", add: "border" },
+  { time: 81, target: ".p2", remove: "border" },
+  { time: 83, target: ".p3", add: "border" },
+  { time: 118, target: ".p3", remove: "border" },
+  { time: 123, target: ".p4", add: "border" },
+  { time: 156, target: ".p4", remove: "border" },
+  { time: 158, target: ".p5", add: "border" },
+  { time: 177, target: ".p5", remove: "border" },
+  { time: 178, target: ".p6", add: "border" },
+  { time: 219, target: ".p6", remove: "border" },
+  { time: 220, target: ".p7", add: "border" },
+  { time: 241, target: ".p7", remove: "border" },
+  { time: 242, target: ".p8", add: "border" },
+  { time: 294, target: ".p8", remove: "border" },,
+  { time: 299, target: ".p9", add: "border" },
+  { time: 349, target: ".p9", remove: "border" },
+  { time: 350, target: ".p10", add: "border" },
+  { time: 418, target: ".p10", remove: "border" },
+
+  /* quote animation trigger effects */
+
+  { time: 6, target: ".font-grey", add: "font-red" },
+  { time: 8, target: ".font-grey", remove: "font-red" },
+  { time: 100, target: ".font-grey1", add: "font-red" },
+  { time: 171, target: ".font-grey2", add: "font-red" },
+  { time: 172, target: ".font-grey3", add: "font-red" },
+  { time: 173, target: ".font-grey4", add: "font-red" },
+  { time: 175, target: ".font-grey5", add: "font-red" },
+  { time: 180, target: ".font-grey6", add: "font-red" },
+  { time: 219, target: ".font-grey6", remove: "font-red" },
+  { time: 187, target: ".font-grey7", add: "font-red" },
+  { time: 219, target: ".font-grey7", remove: "font-red" },
+  { time: 233, target: ".font-grey8", add: "font-yellow" },
+  { time: 371, target: ".font-grey9", add: "font-red" },
+  { time: 372, target: ".font-grey10", add: "font-red" },
+  { time: 372, target: ".font-grey11", add: "font-red" },
+  { time: 371, target: ".font-grey12", add: "font-red" },
+  { time: 5, target: ".font-black1", add: "bg-white" },
+  { time: 7, target: ".font-black1", remove: "bg-white" },
+  { time: 156, target: ".quote1", add: "quote2" },
+   { time: 159, target: ".quote1", remove: "quote2" },
+
+  { time: 10, target: ".mainpage", remove: "active" },
+  { time: 16, target: ".changeme2", remove: "show" },
+  { time: 16, target: ".changeme2", add: "hidden" },
+
+  { time: 16, target: ".changeme3", add: "show" },
+  { time: 28, target: ".changeme3", remove: "show" },
+  { time: 28, target: ".changeme3", add: "hidden" },
+
+];
